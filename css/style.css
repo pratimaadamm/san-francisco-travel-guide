@@ -1,0 +1,1159 @@
+/* ============================================
+   GLOBAL (Apple-style minimal theme)
+   ============================================ */
+body {
+  background-color: #f5f5f7;
+  /* Apple background */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Smooth section spacing */
+section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Containers unified */
+.container {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+/* ============================================
+   NAVBAR (Premium minimal + underline animation)
+   ============================================ */
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e7;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Navbar underline animation */
+.nav-underline {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0%;
+  background-color: #111;
+  transition: width 0.3s ease;
+}
+
+.nav-underline:hover::after {
+  width: 100%;
+}
+
+
+/* ============================================
+   HERO VIDEO SECTION (Clean Apple-style)
+   ============================================ */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  /* Premium medium height */
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+/* Actual video */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+/* Left-aligned premium text */
+.hero-text-left,
+.hero-text-clean {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  z-index: 10;
+  text-align: left;
+  color: #fff;
+}
+
+/* Hero title */
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.4),
+    0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Hero subtitle */
+.hero-subtext {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 12px;
+  color: #fdfdfd;
+  text-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.35),
+    0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ============================================
+   SECTION INTRO (Between Hero + Featured)
+   ============================================ */
+.section-intro,
+.clean-gap {
+  margin-top: 52px;
+  /* Adjust the gap between hero → section title */
+  margin-bottom: 40px;
+  /* Adjust gap before featured section */
+  text-align: center;
+}
+
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 12px;
+  /* Increased spacing */
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0;
+}
+
+
+/* ============================================
+   FEATURED SECTION (Golden Gate)
+   ============================================ */
+.featured-wrapper {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.featured-box {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.featured-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* Clean text on image */
+.featured-text-clean {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+  z-index: 10;
+}
+
+.featured-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 0.9;
+}
+
+.featured-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin: 8px 0;
+  text-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.4),
+    0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.featured-subtext {
+  font-size: 1rem;
+  max-width: 400px;
+  opacity: 0.95;
+  text-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  background-color: #ffffff;
+  padding: 20px;
+  border-top: 1px solid #e5e5e7;
+  color: #555;
+  font-size: 14px;
+}
+
+/* ============================================
+   PREMIUM FOOD SECTION – APPLE EDITORIAL STYLE
+   ============================================ */
+
+.food-section-ed {
+  margin-top: 80px;
+  margin-bottom: 90px;
+}
+
+/* Top text */
+.food-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.food-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.food-subtext {
+  max-width: 700px;
+  margin: 12px auto 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Featured wide image */
+.food-featured-img img {
+  width: 100%;
+  border-radius: 26px;
+  object-fit: cover;
+  height: 420px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* Editorial food cards */
+.food-card-ed {
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.05);
+  transition: transform .25s ease, box-shadow .25s ease;
+  text-align: center;
+}
+
+.food-card-ed:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.08);
+}
+
+.food-thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 18px;
+}
+
+.food-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.food-desc {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ================================
+   PREMIUM FOOD EXPERIENCE CSS
+================================ */
+
+/* Video strip */
+.food-video-strip video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Featured food image */
+.food-featured-img img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 26px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Taste of SF icons */
+.taste-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.taste-desc {
+  color: #666;
+}
+
+/* Horizontal premium slider */
+.food-slider-ed {
+  display: flex;
+  overflow-x: auto;
+  gap: 24px;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.food-slider-ed::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-card {
+  flex: 0 0 240px;
+  scroll-snap-align: start;
+  background: #fff;
+  padding: 14px;
+  border-radius: 20px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform .25s ease;
+}
+
+.slider-card:hover {
+  transform: translateY(-4px);
+}
+
+.slider-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* Locals list */
+.locals-list-ed p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Dessert cards */
+.dessert-card-ed {
+  background: #fff;
+  padding: 16px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.06);
+}
+
+.dessert-card-ed img {
+  width: 100%;
+  height: 200px;
+  border-radius: 18px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.dessert-card-ed h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* Floating fact box */
+.food-fact-ed {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  max-width: 760px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.food-fact-ed h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.food-fact-ed p {
+  color: #555;
+  font-size: 1rem;
+}
+/* ========= SF FOOD MAP SECTION (PREMIUM) ========= */
+
+.sf-food-map {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.map-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #111;
+}
+
+.map-subtitle {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Map panel */
+.map-panel {
+  background: #f7f7f7;
+  padding: 30px;
+  border-radius: 18px;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.map-image {
+  width: 900px;
+  max-width: 100%;
+  border-radius: 14px;
+}
+
+/* List next to map */
+.map-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.pin {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #e63946;
+  /* RED NUMBER PIN */
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 22px;
+  margin-right: 8px;
+}
+.sf-map-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sf-map {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Base pin style */
+.map-pin {
+  position: absolute;
+  background: white;
+  border: 2px solid #e63946;
+  /* premium red border */
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.map-pin:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+/* ---- Map section heading ---- */
+.sf-food-map {
+  padding: 40px 0;
+}
+
+.map-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #111;
+}
+
+.map-subtitle {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* ---- Map wrapper ---- */
+.sf-map-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  /* ensures no pin goes outside rounded box */
+  background: #f7f7f7;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.sf-map {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+}
+
+/* ---- Base pin style (white circle + red border) ---- */
+.map-pin {
+  position: absolute;
+  background: #fff;
+  border: 2px solid #e63946;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.map-pin:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  background: #fffdf9;
+}
+
+/* ---- PIN POSITIONS (percentage based so it scales with map) ---- */
+/* You can tweak these top/left values if something feels off visually
+   – they’re approximate positions for a mid-zoom SF map.            */
+
+/* North waterfront cluster */
+.pin-irish {
+  top: 18%;
+  left: 26%;
+}
+
+/* Buena Vista Cafe */
+.pin-ghirardelli {
+  top: 22%;
+  left: 32%;
+}
+
+/* Ghirardelli Square */
+.pin-crab {
+  top: 24%;
+  left: 46%;
+}
+
+/* Crab House, Pier 39 */
+.pin-chowder {
+  top: 28%;
+  left: 44%;
+}
+
+/* Boudin at Wharf */
+
+/* North Beach / Chinatown area */
+.pin-swan {
+  top: 35%;
+  left: 35%;
+}
+
+/* Swan Oyster Depot */
+.pin-focaccia {
+  top: 37%;
+  left: 49%;
+}
+
+/* Liguria Bakery */
+.pin-cioppino {
+  top: 42%;
+  left: 46%;
+}
+
+/* Sotto Mare */
+.pin-dimsum {
+  top: 44%;
+  left: 52%;
+}
+
+/* Good Mong Kok Bakery */
+
+/* Mission / Dolores area */
+.pin-tartine {
+  top: 68%;
+  left: 43%;
+}
+
+/* Tartine Bakery */
+.pin-icecream {
+  top: 70%;
+  left: 47%;
+}
+
+/* Bi-Rite Creamery */
+.pin-burrito {
+  top: 72%;
+  left: 52%;
+}
+
+/* La Taqueria */
+/* ==== MAP SECTION HEADING (same as before) ==== */
+.sf-food-map {
+  padding: 36px 0;
+}
+
+.map-title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #111;
+}
+
+.map-subtitle {
+  max-width: 620px;
+  margin: 0 auto 24px;
+  font-size: 15px;
+  color: #666;
+}
+
+/* ==== SMALLER MAP WRAPPER (CARD STYLE) ==== */
+.sf-map-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  /* 🔽 was 900px – now small & cute */
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  /* keeps pins inside rounded corners */
+  background: radial-gradient(circle at top,
+      #f8fafc 0%, #f1f5f9 40%, #e5e7eb 100%);
+  padding: 14px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
+  /* deeper, premium */
+}
+
+.sf-map {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  /* optional thin border to make 3D-style map pop */
+  border: 1px solid rgba(148, 163, 184, 0.6);
+}
+
+/* ==== BASE PIN STYLE – slightly smaller ==== */
+.map-pin {
+  position: absolute;
+  background: #ffffff;
+  border: 2px solid #e63946;
+  width: 32px;
+  /* 🔽 smaller */
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  /* 🔽 smaller */
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    background 0.18s ease, border-color 0.18s ease;
+}
+
+.map-pin:hover {
+  transform: translateY(-2px) scale(1.12);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.25);
+  background: #fffdf8;
+  border-color: #f97316;
+  /* warm highlight on hover */
+}
+/* Tooltip label on hover/tap */
+.map-pin::after {
+  content: attr(data-label);
+  position: absolute;
+  top: -10px;
+  /* above the pin */
+  left: 50%;
+  transform: translate(-50%, -140%);
+  white-space: nowrap;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: #111;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.28);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 10;
+}
+
+/* little triangle below label */
+.map-pin::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+  z-index: 9;
+}
+
+/* Show label on hover (desktop) */
+.map-pin:hover::after,
+.map-pin:hover::before {
+  opacity: 1;
+}
+
+/* Show label on focus (mobile tap / keyboard) */
+.map-pin:focus-visible::after,
+.map-pin:focus-visible::before {
+  opacity: 1;
+}
+.neighborhood-scroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding: 12px 0;
+  flex-wrap: nowrap;
+}
+
+.neighborhood-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.neighborhood-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.neighborhood-card {
+  flex: 0 0 280px;
+  background: #fff;
+  border-radius: 22px;
+  padding: 14px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.neighborhood-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.14);
+}
+
+.neighborhood-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 10px;
+}
+
+.neighborhood-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.neighborhood-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+/* Map */
+.map-box img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Food cards */
+.food-card {
+  padding: 18px 0;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.food-card:last-child {
+  border-bottom: none;
+}
+
+.food-card h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.food-card p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.food-location {
+  font-size: 13px;
+  font-weight: 600;
+  color: #b08a2e;
+  /* soft gold */
+}
+.food-landmarks .row {
+  min-height: 520px;
+  /* forces balance */
+}
+/* =========================================
+   SAN FRANCISCO FOOD MAP — FINAL CSS
+   (Authoritative override, no duplicates)
+========================================= */
+
+/* Map container */
+.map-wrapper {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Map image */
+.map-img {
+  width: 100%;
+  display: block;
+  border-radius: 24px;
+}
+
+/* Clickable red pins */
+.map-pin {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #e63946;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  box-shadow: 0 0 0 6px rgba(230, 57, 70, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  /* HARD RESET — removes white dash forever */
+  outline: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  line-height: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hover effect */
+.map-pin:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+  box-shadow: 0 0 0 10px rgba(230, 57, 70, 0.35);
+}
+/* ===============================
+   MAP PIN TOOLTIP (FINAL)
+   NO TEXT NODES → NO DASH
+================================ */
+
+.map-pin {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #e63946;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  box-shadow: 0 0 0 6px rgba(230, 57, 70, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* hover glow */
+.map-pin:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+  box-shadow: 0 0 0 10px rgba(230, 57, 70, 0.35);
+}
+
+/* TOOLTIP VIA ::after (NO DASH POSSIBLE) */
+.map-pin::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 10px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* show tooltip */
+.map-pin:hover::after {
+  opacity: 1;
+}
+
+/* absolute kill-switch */
+.map-pin,
+.map-pin::before,
+.map-pin::after {
+  text-decoration: none !important;
+  outline: none !important;
+  border: none !important;
+}
+/* Remove ALL link artifacts (final kill switch) */
+.map-pin,
+.map-pin:focus,
+.map-pin:active,
+.map-pin:focus-visible,
+.map-pin * {
+  outline: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+/* Pin positions (adjust only if needed) */
+.pin-cioppino {
+  top: 24%;
+  left: 45%;
+}
+
+.pin-chowder {
+  top: 28%;
+  left: 50%;
+}
+
+.pin-dimsum {
+  top: 26%;
+  left: 52%;
+}
+
+.pin-burrito {
+  top: 52%;
+  left: 50%;
+}
+
+.pin-ghirardelli {
+  top: 63%;
+  left: 58%;
+}
+/* ============================
+   ITINERARY – PREMIUM STYLING
+============================ */
+
+.itinerary-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 32px;
+  margin-bottom: 32px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.itinerary-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Title */
+.itinerary-card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+/* subtle gold accent line */
+.itinerary-card h4::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #b08a2e;
+  /* soft gold */
+  margin-top: 8px;
+}
+
+/* List styling */
+.itinerary-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.itinerary-card li {
+  font-size: 15px;
+  color: #444;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  line-height: 1.6;
+}
+
+.itinerary-card li:last-child {
+  border-bottom: none;
+}
+
+/* Bold labels */
+.itinerary-card strong {
+  color: #111;
+  font-weight: 600;
+}
+/* ===============================
+   ITINERARY ACCORDION – PREMIUM
+================================ */
+
+.itinerary-accordion .accordion-item {
+  border: none;
+  margin-bottom: 18px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.itinerary-accordion .accordion-button {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 22px 26px;
+  background: #ffffff;
+  color: #111;
+}
+
+.itinerary-accordion .accordion-button:not(.collapsed) {
+  background: #ffffff;
+  color: #111;
+  box-shadow: none;
+}
+
+/* remove default bootstrap arrow bg */
+.itinerary-accordion .accordion-button::after {
+  background-size: 14px;
+}
+
+/* body */
+.itinerary-accordion .accordion-body {
+  padding: 22px 26px;
+  background: #fff;
+}
+
+/* list styling */
+.itinerary-accordion ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.itinerary-accordion li {
+  font-size: 15px;
+  color: #444;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.itinerary-accordion li:last-child {
+  border-bottom: none;
+}
+/* ===============================
+   VIEW ON MAP LINK – PREMIUM
+================================ */
+
+.view-map-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #b08a2e;
+  /* soft gold */
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.view-map-link:hover {
+  color: #8f6f1f;
+  transform: translateX(4px);
+}
+/* ===============================
+   GALLERY – PREMIUM LOOK
+================================ */
+
+.gallery-section {
+  margin-bottom: 80px;
+}
+
+.gallery-card {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Premium hover */
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
+}

@@ -1,0 +1,580 @@
+/* ============================================
+   ATTRACTIONS PAGE – APPLE EDITORIAL STYLE
+   ============================================ */
+
+/* Hero image – editorial, not too tall */
+
+/* ===============================
+   GOLDEN GATE VIDEO – PREMIUM
+================================ */
+
+.golden-gate-section {
+    position: relative;
+}
+.golden-gate-section .lux-title {
+    margin-bottom: 36px;
+}
+/* Video container */
+.golden-gate-section .hero-video {
+    width: 100%;
+    max-width: 1100px;
+    /* editorial width */
+    height: 420px;
+    /* controlled premium height */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 48px;
+    /* center + spacing */
+    border-radius: 26px;
+
+    /* luxury depth */
+    box-shadow:
+        0 22px 50px rgba(0, 0, 0, 0.18),
+        0 10px 24px rgba(0, 0, 0, 0.12);
+}
+.attraction-hero-ed {
+    height: 52vh;
+    overflow: hidden;
+    position: relative;
+}
+@media (max-width: 768px) {
+    .golden-gate-section .hero-video {
+        height: 280px;
+        border-radius: 18px;
+        margin-bottom: 36px;
+    }
+}
+.attraction-hero-ed-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9) contrast(1.08) saturate(1.05);
+}
+
+/* Floating Golden Gate card */
+.gg-intro-section {
+    margin-top: -40px;
+    /* overlaps hero slightly */
+    margin-bottom: 56px;
+}
+
+.gg-intro-card {
+    background: #ffffff;
+    border-radius: 26px;
+    padding: 40px 38px;
+    max-width: 960px;
+    margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.gg-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+.gg-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.gg-desc {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Tips section – Apple style cards */
+.tips-section-ed {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.tips-heading-ed {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.tip-card-ed {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 26px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tip-card-ed:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+.tip-title-ed {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.tip-text-ed {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* More Attractions editorial rows */
+.more-attractions-ed {
+    margin-bottom: 70px;
+}
+
+.section-heading-ed {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+/* Flex rows with alternating layout on desktop */
+.attraction-row-ed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.attraction-row-ed.reverse {
+    flex-direction: row-reverse;
+}
+
+.attraction-image-ed {
+    flex: 1 1 320px;
+}
+
+.attraction-image-ed img {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    object-fit: cover;
+}
+
+/* Text block */
+.attraction-text-ed {
+    flex: 1 1 320px;
+}
+
+.attraction-eyebrow-ed {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 6px;
+}
+
+.attraction-title-ed {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.attraction-desc-ed {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .gg-intro-card {
+        padding: 30px 22px;
+        border-radius: 20px;
+    }
+
+    .gg-title {
+        font-size: 2.1rem;
+    }
+
+    .attraction-row-ed,
+    .attraction-row-ed.reverse {
+        flex-direction: column;
+    }
+
+    .attraction-hero-ed {
+        height: 40vh;
+    }
+}
+/* Make Golden Gate image smaller + centered */
+.hero-golden-gate img {
+    width: 70%;
+    /* makes image smaller */
+    max-width: 750px;
+    /* keeps it premium sized */
+    display: block;
+    margin: 0 auto;
+    /* centers image */
+    border-radius: 22px;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.18);
+}
+
+.gold-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #d4af37, #f5e6a1);
+    margin: 18px auto 0 auto;
+    border-radius: 4px;
+}
+
+.premium-title {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+.lux-card {
+    padding: 22px;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.lux-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+/* Section Title */
+.lux-title {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+/* Gold line under title */
+.lux-divider {
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(90deg, #d4af37, #f9e7b1);
+    margin: 12px auto 25px auto;
+    border-radius: 4px;
+}
+
+/* Premium Cards */
+.lux-view-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #efefef;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: all .35s ease;
+}
+
+/* Elegant hover effect */
+.lux-view-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #d4af37;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Text Styling */
+.lux-view-card h5 {
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.lux-view-card p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.5;
+}
+/* Scroll wrapper */
+.scroll-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 22px;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* Card styling */
+.view-card {
+    min-width: 260px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.view-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image */
+.view-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+/* Title + text */
+.view-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #111;
+}
+
+.view-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+/* Uniform image size container */
+.attract-img {
+    width: 100%;
+    height: 220px;
+    /* FIXED HEIGHT for all images */
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.attract-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* force perfect cropping */
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+/* Premium hover zoom */
+.attract-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Card styling */
+.attract-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.attract-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Title */
+.attract-card h4 {
+    margin-top: 14px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Description */
+.attract-card p {
+    margin: 8px 0 10px;
+    color: #555;
+    font-size: 15px;
+}
+
+/* === FINAL FIX: REMOVE UNDERLINE FROM ATTRACTION CARD LINKS === */
+
+.view-card a,
+.view-card a:hover,
+.view-card a:focus,
+.view-card a:active {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+/* =========================================
+   ATTRACTIONS SCROLL — HARD UNDERLINE KILL
+   (Scoped, safe, final)
+========================================= */
+
+/* remove underline from ANY link inside attraction cards */
+.attractions-scroll a,
+.attractions-scroll a:hover,
+.attractions-scroll a:focus,
+.attractions-scroll a:active,
+.attractions-scroll a:visited {
+    text-decoration: none !important;
+    color: inherit !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+/* also protect text elements if wrapped by links */
+.attractions-scroll a h4,
+.attractions-scroll a p,
+.attractions-scroll a span {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+/* === FINAL FIX: NO UNDERLINE FOR ATTRACTION CARDS === */
+
+a.view-card-link {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* remove underline from all text inside the link */
+a.view-card-link h4,
+a.view-card-link p {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* prevent underline on hover/focus */
+a.view-card-link:hover,
+a.view-card-link:hover h4,
+a.view-card-link:hover p,
+a.view-card-link:focus,
+a.view-card-link:focus h4,
+a.view-card-link:focus p {
+    text-decoration: none !important;
+}
+/* === FORCE SAME CARD HEIGHT === */
+
+.view-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.view-card img {
+    width: 100%;
+    height: 180px;
+    /* adjust if needed */
+    object-fit: cover;
+    border-radius: 18px;
+}
+.view-card h4 {
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.view-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+/* === REMOVE GOLD DASHED LINES FOR GOLDEN GATE TITLE === */
+
+.golden-gate-section .lux-divider,
+.golden-gate-section .gold-line {
+    display: none !important;
+}
+
+/* If lines are coming from title pseudo-elements */
+.golden-gate-section h2::before,
+.golden-gate-section h2::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+}
+.golden-gate-section h2 {
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+}
+/* ===============================
+   PREMIUM GOLDEN GATE HERO IMAGE
+================================ */
+
+.hero-golden-gate {
+    max-width: 1100px;
+    /* premium editorial width */
+    margin: 0 auto 48px;
+    /* center + breathing space */
+    position: relative;
+}
+
+.hero-golden-gate img {
+    width: 100%;
+    height: 460px;
+    /* KEY: controlled premium height */
+    object-fit: cover;
+    border-radius: 24px;
+    /* softer luxury radius */
+
+    /* editorial depth */
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.18),
+        0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* remove gold line if still present */
+.hero-golden-gate .gold-line {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hero-golden-gate img {
+        height: 300px;
+        border-radius: 18px;
+    }
+}
+/* === REMOVE GOLD LINE FOR "MORE SAN FRANCISCO ATTRACTIONS" === */
+
+/* If a divider element is used */
+.more-attractions .gold-line,
+.more-attractions .lux-divider {
+    display: none !important;
+}
+
+/* If line is coming from heading pseudo-elements */
+.more-attractions h2::before,
+.more-attractions h2::after {
+    content: none !important;
+    display: none !important;
+    border: none !important;
+}
+/* safer scoped version */
+section.container.my-5 .lux-divider {
+    display: none !important;
+}
+/* ===============================
+   NAVBAR HOVER UNDERLINE (MATCH INDEX)
+================================ */
+
+.nav-underline {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0%;
+    background-color: #111;
+    transition: width 0.3s ease;
+}
+
+.nav-underline:hover::after {
+    width: 100%;
+}
